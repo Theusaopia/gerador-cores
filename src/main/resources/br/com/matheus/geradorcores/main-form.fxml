@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="518.0" prefWidth="537.0" spacing="20.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.matheus.geradorcores.MainController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <Pane prefHeight="530.0" prefWidth="497.0">
+         <children>
+            <Label layoutX="14.0" layoutY="10.0" text="Formato">
+               <font>
+                  <Font name="Roboto Light" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="85.0" text="RED">
+               <font>
+                  <Font name="Roboto Light" size="18.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Label>
+            <Label layoutX="14.0" layoutY="120.0" text="GREEN">
+               <font>
+                  <Font name="Roboto Light" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="155.0" text="BLUE">
+               <font>
+                  <Font name="Roboto Light" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="315.0" text="Frase">
+               <font>
+                  <Font name="Roboto Light" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnExecutar" layoutX="212.0" layoutY="425.0" mnemonicParsing="false" onAction="#onClickExecuteButton" text="EXECUTAR" />
+            <ChoiceBox fx:id="comboFormat" layoutX="96.0" layoutY="10.0" prefHeight="25.0" prefWidth="68.0" />
+            <TextField fx:id="redValue" layoutX="89.0" layoutY="85.0" prefHeight="25.0" prefWidth="68.0" />
+            <TextField fx:id="greenValue" layoutX="89.0" layoutY="120.0" prefHeight="25.0" prefWidth="68.0" />
+            <TextField fx:id="blueValue" layoutX="89.0" layoutY="155.0" prefHeight="25.0" prefWidth="68.0" />
+            <TextField fx:id="frase" layoutX="72.0" layoutY="315.0" prefHeight="25.0" prefWidth="391.0" />
+         </children>
+      </Pane>
+   </children>
+</VBox>

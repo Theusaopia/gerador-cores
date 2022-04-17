@@ -10,10 +10,13 @@ import java.io.IOException;
 public class MainApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(MainApplication.class.getResource("hello-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
-        stage.setTitle("Hello!");
+        FXMLLoader fxmlLoader = new FXMLLoader(MainApplication.class.getResource("main-form.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 537, 518);
+        stage.setTitle("Gerador de cores");
         stage.setScene(scene);
+
+
+
         stage.show();
     }
 
